@@ -36,7 +36,7 @@ public class Artista extends MutxaAwards implements AccionesAsistentes{
         if (listaPremios.contains(premio)){
             System.out.println("El artista " + getNombre() + " sube a recoger el premio a " + premio.getCategoria());
         } else {
-            throw new PerdedorException("El artista " + getNombre() + " puede recoger el premio porque no lo ha ganado");
+            throw new PerdedorException("El artista " + getNombre() + " no puede recoger el premio porque no lo ha ganado");
         }
     }
 
